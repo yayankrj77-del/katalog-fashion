@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Checkout | Mixtas</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body{
+    background:#7b9bb6;
+}
+.checkout-card{
+    background:#fff;
+    border-radius:16px;
+    padding:30px;
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+}
+.product-img{
+    max-height:220px;
+    object-fit:contain;
+}
+.total{
+    font-size:24px;
+    font-weight:800;
+}
+.btn{
+    border-radius:30px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container py-5">
+
+<h2 class="text-center fw-bold text-white mb-4">
+    CHECKOUT PRODUK
+</h2>
+
+<div class="checkout-card mx-auto" style="max-width:900px;">
+
+<div class="row g-4">
+
+    <!-- PRODUCT -->
+    <div class="col-md-5 text-center">
+        <img src="foto/裳蘂_Sunrise__品牌選物店____Asics_Skyhand_新配色火速出爐_____-removebg-preview.png" class="img-fluid product-img">
+        <h5 class="fw-bold mt-3">Classic Samba Shoes</h5>
+        <p class="text-muted">Rp 1.250.000</p>
+    </div>
+
+    <!-- FORM -->
+    <div class="col-md-7">
+
+        <h5 class="fw-bold mb-3">Informasi Pembeli</h5>
+
+        <input type="text" class="form-control mb-3" placeholder="Nama Lengkap">
+        <input type="email" class="form-control mb-3" placeholder="Email">
+        <input type="text" class="form-control mb-3" placeholder="Nomor Telepon">
+        <textarea class="form-control mb-3" rows="3" placeholder="Alamat Lengkap"></textarea>
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <span class="fw-bold">Total</span>
+            <span class="total">Rp 1.250.000</span>
+        </div>
+
+        <!-- BUTTON FIX -->
+        <button onclick="checkoutSuccess()" class="btn btn-dark w-100 py-2">
+            BAYAR SEKARANG
+        </button>
+
+        <a href="shoes.html" class="d-block text-center mt-3 text-decoration-none">
+            ← Kembali ke Produk
+        </a>
+
+    </div>
+
+</div>
+</div>
+</div>
+
+<script>
+function checkoutSuccess(){
+    alert("Berhasil dicheckout!");
+}
+</script>
+
+</body>
+</html>

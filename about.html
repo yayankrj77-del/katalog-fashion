@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>About Us | Mixtas Fashion</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+body{
+    background:#6f8fb0;
+    font-family:'Poppins', sans-serif;
+}
+/* ========================= */
+/* IMAGE ZOOM OUT ANIMATION */
+/* ========================= */
+.about-img{
+    width:100%;
+    border-radius:18px;
+    object-fit:cover;
+    transition:transform 0.45s ease;
+}
+
+/* ZOOM OUT IMAGE */
+.about-img:hover{
+    transform:scale(1.08);
+}
+
+/* =============================== */
+/* SMALL CARD (TEXT) ZOOM OUT */
+/* =============================== */
+.highlight-box{
+    background:#f5f5f5;
+    padding:18px;
+    border-radius:14px;
+    margin-top:20px;
+    transition:transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* ZOOM OUT CARD KECIL */
+.highlight-box:hover{
+    transform:scale(1.05);
+    box-shadow:0 12px 30px rgba(0,0,0,0.18);
+}
+
+
+/* Card */
+.about-card{
+    background:#fff;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* Image */
+.about-img{
+    width:100%;
+    border-radius:18px;
+    object-fit:cover;
+}
+
+/* Text */
+.about-title{
+    font-size:34px;
+    font-weight:700;
+}
+
+.about-text{
+    font-size:16px;
+    color:#444;
+    line-height:1.8;
+}
+
+/* Highlight Box */
+.highlight-box{
+    background:#f5f5f5;
+    padding:18px;
+    border-radius:14px;
+    margin-top:20px;
+}
+
+.highlight-box h5{
+    font-weight:600;
+}
+
+/* Button */
+.btn-back{
+    background:#000;
+    color:#fff;
+    border-radius:30px;
+    padding:10px 30px;
+}
+</style>
+</head>
+
+<body>
+
+
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark custom-nav">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.">Mixtas</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="new-arrivals.html">Pages</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="d-flex gap-3 fs-5">
+    <a href="#" class="text-white text-decoration-none">♡</a>
+    <a href="login.html" class="text-white text-decoration-none">👤</a>
+    <a href="search.php." class="text-white text-decoration-none">🔍</a>
+</div>
+
+        </div>
+    </div>
+</nav>
+
+<!-- About Section -->
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-11">
+            <div class="about-card">
+
+                <div class="row align-items-center g-5">
+
+                    <!-- Image -->
+                    <div class="col-md-5">
+                        <img src="foto/download__26_-removebg-preview.png" alt="About Mixtas" class="about-img">
+                    </div>
+
+                    <!-- Text -->
+                    <div class="col-md-7">
+                        <h2 class="about-title mb-3">About Mixtas</h2>
+
+                        <p class="about-text">
+                            <strong>Mixtas Fashion</strong> adalah brand fashion modern
+                            yang memadukan gaya kasual, streetwear, dan elegan
+                            dalam satu identitas visual.
+                        </p>
+
+                        <p class="about-text">
+                            Kami menghadirkan koleksi yang nyaman digunakan,
+                            mengikuti tren terkini, dan cocok untuk berbagai
+                            aktivitas — dari santai hingga semi formal.
+                        </p>
+
+                        <div class="highlight-box">
+                            <h5>Visi Kami</h5>
+                            <p>
+                                Menjadi brand fashion modern yang mengutamakan
+                                kualitas, kenyamanan, dan gaya.
+                            </p>
+                        </div>
+
+                        <div class="highlight-box">
+                            <h5>Misi Kami</h5>
+                            <p>
+                                • Produk berkualitas tinggi<br>
+                                • Desain modern & relevan<br>
+                                • Pengalaman belanja simpel
+                            </p>
+                        </div>
+
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
